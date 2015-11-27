@@ -1,0 +1,19 @@
+﻿/*图标分割*/
+.icon {display: inline-block;background: url(../images/health-icon.png) no-repeat;transform-origin: right bottom; -webkit-transform-origin: right bottom; -ms-transform-origin: right bottom;}
+.icon-flower { width: 90px; height: 80px; background-position: -181px -2px;margin: -56px 0 -3px -73px;
+transform:scale(.3);
+-ms-transform:scale(.3); 	/* IE 9 */
+-moz-transform:scale(.3); 	/* Firefox */
+-webkit-transform:scale(.3); /* Safari 和 Chrome */
+-o-transform:scale(.3); 	/* Opera */ }
+
+
+.page { left: 0; width: 100%; background: #fff; }
+
+/*顶部区域*/
+.top-part-div {padding-top:60px;background-color:#eeeeee;} 
+#top-part .top-part-div div {margin: 10px;}
+#flower-game-icon {top: 5px; background: url(../images/medal.png) top center no-repeat; background-size: 100%;}
+
+/*中部树区域*/
+#tree-part {margin: 20px; background: url(../images/tree.png) top center no-repeat; background-size: 100%;}
