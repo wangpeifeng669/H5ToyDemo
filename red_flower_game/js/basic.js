@@ -1,7 +1,19 @@
 ﻿/*初始化完页面自动调用*/
 $(function () {
-    // setup garden
+    // 初始化 UI 尺寸
     refreshItemHeight();
+
+    $("#bottom-part #add-flower").click(function(){
+    	$("#tree-part").prepend('<span id="flower" class="icon icon-flower pos-abs"></span>');
+    	$("#tree-part "+"#flower").css({"top":"100%","left":"50%"});
+    	var randomTop = 20+Math.random()*50+"%";
+    	var randomLeft = 10+Math.random()*80+"%";
+    	$("#tree-part "+"#flower").animate({
+    		top:randomTop,
+    		left:randomLeft,
+    		opacity:'0.5',
+    	});
+    });
 });
 
 /*页面尺寸发生变化促发*/
@@ -18,5 +30,5 @@ function refreshItemHeight() {
 	$("#flower-game-icon").css("margin-left", (newWidth-$("#flower-game-icon").width())/2);
 
     //设置顶部小红花高度和水平居中显示
-	$("#tree-part").css("height", $("#tree-part").width()*91/84);
+    $("#tree-part").css("height", $("#tree-part").width()*91/84);
 }
