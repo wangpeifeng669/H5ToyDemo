@@ -17,3 +17,27 @@ transform:scale(.3);
 
 /*中部树区域*/
 #tree-part {margin: 20px; background: url(../images/tree.png) top center no-repeat; background-size: 100%;}
+
+
+/* button   
+---------------------------------------------- */  
+.button {
+	border:none;
+    margin: 0 2px;  
+    height: 40px;
+    text-align: center;  
+    text-decoration: none;  
+    font: 18px/100% Arial, Helvetica, sans-serif;  
+    padding: .5em 2em .55em;  
+    background:#CD661D; 
+    color: #ffffff;
+}  
+.button:hover {  
+    text-decoration: none;  
+    background:#CD3333; 
+}  
+.button:active {  
+    position: relative;  
+    top: 1px;  
+    background:#A52A2A; 
+}
