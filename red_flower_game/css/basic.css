@@ -49,3 +49,8 @@ textarea { font-family: "微软雅黑", '宋体', 'Arial'; color: #333; -webkit-
 .aleft { text-align: left; }
 .aright { text-align: right; }
 .acenter { text-align: center; }
+
+/*显示*/
+.hide { display: none; }
+.show { visibility: visible; }
+.hidden { visibility: hidden; }

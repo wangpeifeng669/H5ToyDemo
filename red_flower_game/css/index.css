@@ -1,11 +1,23 @@
 ﻿/*图标分割*/
 .icon {display: inline-block;background: url(../images/health-icon.png) no-repeat;transform-origin: right bottom; -webkit-transform-origin: right bottom; -ms-transform-origin: right bottom;}
-.icon-flower { width: 90px; height: 80px; background-position: -181px -2px;margin: -56px 0 -3px -73px;
+.icon-flower-color { width: 90px; height: 80px; background-position: -181px -2px;margin: -56px 0 -3px -73px;
 transform:scale(.3);
 -ms-transform:scale(.3); 	/* IE 9 */
 -moz-transform:scale(.3); 	/* Firefox */
 -webkit-transform:scale(.3); /* Safari 和 Chrome */
 -o-transform:scale(.3); 	/* Opera */ }
+.icon-sports { width: 60px; height: 60px; background-position: -8px -8px;
+transform:scale(.5);
+-ms-transform:scale(.5); 	/* IE 9 */
+-moz-transform:scale(.5); 	/* Firefox */
+-webkit-transform:scale(.5); /* Safari 和 Chrome */
+-o-transform:scale(.5); 	/* Opera */ }
+.icon-flower { width: 60px; height: 60px; background-position: -77px -6px; 
+transform:scale(.5);
+-ms-transform:scale(.5); 	/* IE 9 */
+-moz-transform:scale(.5); 	/* Firefox */
+-webkit-transform:scale(.5); /* Safari 和 Chrome */
+-o-transform:scale(.5); 	/* Opera */ }
 
 
 .page { left: 0; width: 100%; background: #fff; }
@@ -16,7 +28,7 @@ transform:scale(.3);
 #flower-game-icon {top: 5px; background: url(../images/medal.png) top center no-repeat; background-size: 100%;}
 
 /*中部树区域*/
-#tree-part {margin: 20px; background: url(../images/tree.png) top center no-repeat; background-size: 100%;}
+#tree-part {width:90%; margin: 20px; background: url(../images/tree.png) top center no-repeat; background-size: 100%;}
 
 
 /* button   
@@ -27,7 +39,7 @@ transform:scale(.3);
     height: 40px;
     text-align: center;  
     text-decoration: none;  
-    font: 18px/100% Arial, Helvetica, sans-serif;  
+    font: 16px/100% Arial, Helvetica, sans-serif;  
     padding: .5em 2em .55em;  
     background:#CD661D; 
     color: #ffffff;

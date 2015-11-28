@@ -6,12 +6,13 @@
 
 	<link href="css/basic.css" rel="stylesheet">
 	<link href="css/index.css" rel="stylesheet">
+	<link href="css/fire_style.css" rel="stylesheet">
 	<script src="js/jquery-1.9.1.js"></script>
 	<script src="js/basic.js"></script>
 </head>
 
 <body>
-<div class="page pos-abs">
+	<div class="page pos-abs">
 		<div id="top-part" class="clearfix pos-rel">
 			<div id="flower-game-icon" class="w-3d pos-abs">
 			</div>
@@ -20,7 +21,7 @@
 					目标
 				</div>
 				<div>
-					<span class="icon icon-flower"></span>
+					<span class="icon icon-flower-color "></span>
 					<span id="flower-point">5</span>
 				</div>
 			</div>
@@ -29,12 +30,21 @@
 					完成
 				</div>
 				<div>
-					<span class="icon icon-flower"></span>
-					<span id="finished-point">5</span>
+					<span class="icon icon-flower-color "></span>
+					<span id="finished-point">0</span>
 				</div>
 			</div>
 		</div>
-		<div id="tree-part" class="w-1d pos-rel">
+		<div id="tree-part" class="pos-rel">
+			<div class='flame-part-ground hidden'>
+				<div class='flame'></div>
+				<div class='lighterBody'>
+					<div class='hover'>
+					fire you
+					</div>
+				</div>
+				<div class='lid'></div>
+			</div>
 		</div>
 		<div id="bottom-part" class="acenter">
 			<button class="button w-3d acenter" id="add-flower">添花暴击</button>
