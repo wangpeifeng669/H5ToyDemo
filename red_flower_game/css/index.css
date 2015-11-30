@@ -26,6 +26,7 @@ transform:scale(.5);
 .top-part-div {padding-top:60px;background-color:#eeeeee;} 
 #top-part .top-part-div div {margin: 10px;}
 #flower-game-icon {top: 5px; background: url(../images/medal.png) top center no-repeat; background-size: 100%;}
+#count-time {margin-top: 40%;font: 28px/100% Arial, Helvetica, sans-serif; }
 
 /*中部树区域*/
 #tree-part {width:90%; margin: 20px; background: url(../images/tree.png) top center no-repeat; background-size: 100%;}

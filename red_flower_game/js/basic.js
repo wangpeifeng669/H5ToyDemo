@@ -1,13 +1,19 @@
 ﻿//显示的花数
 var flowerNum = 0;
 //需要完成的目标分数
-var point = 5;
+var point = 20;
 //分数
 var finishPoint = 0;
-
+//剩余时间
+var timeLeft = 60;
 
 /*初始化完页面自动调用*/
 $(function () {
+    // 获取输入参数
+    getPoint();
+
+    countTime();
+
     // 初始化 UI 尺寸
     refreshItemHeight();
 
@@ -36,15 +42,20 @@ $(function () {
     	}
     	$("#finished-point").text(finishPoint);
     	$("#tree-part #"+flowerNum).css({"top":"100%","left":"50%"});
+
     	//距离顶部范围10%~70%
     	var randomTop = 10+Math.random()*60+"%";
     	//距离左部范围10%~90%
     	var randomLeft = 10+Math.random()*80+"%";
+    	//红花产生，随机动画飘到树上
     	$("#tree-part #"+flowerNum).animate({
     		top:randomTop,
     		left:randomLeft,
     		opacity:'0.5',
     	});
+
+    	//判断是否完成目标分数
+		checkHasFinishPoint();
     });
 });
 
@@ -52,6 +63,34 @@ $(function () {
 $(window).resize(function() {
 	refreshItemHeight();
 });
+
+/*获取要完成的分数值，来自url输入参数*/
+function getPoint() {
+	var reg = new RegExp("(^|&)" + "point" + "=([^&]*)(&|$)", "i");  
+    var r = window.location.search.substr(1).match(reg);  
+    if (r!=null) {
+    	point = unescape(r[2]);
+    }
+    $("#flower-point").text(point);
+}
+
+/*游戏倒计时*/
+function countTime() {
+	$("#count-time").text(timeLeft);
+	timeLeft = timeLeft - 1;
+	if (timeLeft < 0) {
+		alert("游戏结束，您的分数为"+finishPoint+"分");
+	} else{
+		setTimeout("countTime()",1000);
+	};
+}
+
+/*判断是否完成目标分数*/
+function checkHasFinishPoint() {
+	if (finishPoint >= point) {
+		alert("恭喜完成游戏任务");
+	}
+}
 
 function refreshItemHeight() {
 	var newWidth = $(window).width();
